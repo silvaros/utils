@@ -15,7 +15,7 @@ function( _, globber){
 			}
 
 			return output;
-		};
+		},
 
 		getCSSAssets: function(cssFiles) {
 			var output = globber.get(cssFiles);
