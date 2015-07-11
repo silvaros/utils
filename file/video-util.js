@@ -15,7 +15,10 @@ define(function(){
 			return name.split('.').pop();
 		},
 		getExtMime: function(ext){
-			return mimeTypes[ext] || 'video/mp4';
+			//if ext is actually a full path with an extentison
+			if(ext.indexOf('.')) ext = this.getExt(ext);
+
+			return this.mimeTypes[ext] || 'video/mp4';
 		}
 	}
 });
