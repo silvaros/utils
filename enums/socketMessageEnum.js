@@ -1,13 +1,13 @@
 define(function(){
  	return  {
-		connection: 			'connection',// io reserved
+ 		// Reserved
+		connection: 			'connection',
+		disconnect: 			'disconnect',
+		error: 					'error',	
+		
+		// Custom
 		connectionComplete: 	'CC',
-		disconnect: 			'disconnect',// io reserved
-		fileStreamRequest:		'FSRq',
-		fileStreamResponse:		'FSRs',
-		filesRetrieved: 		'FR',
-		peerDisconnected: 		'PD',
-		requestedFileLocked:	'RFL',
-		sendUsers: 				'SU'
+		peerDisconnected: 		'PD'
+
 	}
 });

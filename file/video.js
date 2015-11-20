@@ -11,9 +11,11 @@ define(function(){
 			"mp2": "video/mpeg",
 			"ogg": "video/ogg"
 		},
+		
 		getExt: function(name){
 			return name.split('.').pop();
 		},
+
 		getExtMime: function(ext){
 			//if ext is actually a full path with an extentison
 			if(ext.indexOf('.')) ext = this.getExt(ext);
